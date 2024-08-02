@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodePen</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./Styles/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+
+<body>
+    <div id="preloader">
+        <img src="images/dplogo.gif" alt="loading...">
+    </div>
+    <header class="header">
+        <img src="./images/DPLogo1.gif" alt="" class="logo" />
+
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li><i  onclick="toggleSun()" id="sunrise" class='bx bxs-sun'></i><i onclick="toggleSun()" id="sunfall" class='bx bxs-moon'></i><a class="navbar-link" href="#"></a></li>
+                <li class="navbar-item"><i class='bx bxs-save'></i><a class="navbar-link" href="#">Save</a></li>
+                <li class="navbar-item"><i id="settinglogo1" class='bx bxs-cog'></i><a class="navbar-link" href="#">Setting</a></li>
+                <li><i class='bx bxs-objects-horizontal-left'></i><a class="navbar-link" href="#"></a></li>
+                <li class="navbar-item " id="signup" ><a id="signup" class="navbar-link" href="#">Sign Up</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="#">Log in</a></li>
+            </ul>
+        </nav>
+        
+        
+
+        <div class="mobile-navbar-btn">
+            <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+            <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+        </div>
+    </header>
+
+    <!-- ======================================== 
+          Our Main Hero Section Start  
+    ========================================  -->
+
+    <section class="section-hero">
+        <div class="editor">
+            <div class="left">
+                <div class="box1">
+                    <div class="box1head">
+                        <div class="boxlogo">
+                            <i id="htmllogo" class='bx bxl-html5'></i>
+                            <label id="label"> HTML</label>
+                        </div>
+                        <div class="boxsetting">
+                            <i id="settinglogo" class='bx bxs-cog'></i>
+                            <i id="arrowlogo" class='bx bxs-chevron-down'></i>
+                        </div>
+                    </div>
+                    <div class="editor1">
+                        <div class="line-numbers" id="line-numbers-html"></div>
+                        <textarea id="code-html"  onkeyup="run()" oninput="updateLineNumbers('code-html', 'line-numbers-html')" onscroll="syncScroll('code-html', 'line-numbers-html')"></textarea>
+                    </div>
+                </div>
+                
+                <div class="box2">
+                    <div class="box2head">
+                        <div class="boxlogo">
+                            <i id="csslogo" class='bx bxl-css3'></i>
+                            <label> CSS</label>
+                        </div>
+                        <div class="boxsetting">
+                            <i id="settinglogo" class='bx bxs-cog'></i>
+                            <i id="arrowlogo" class='bx bxs-chevron-down'></i>
+                        </div>
+                    </div>
+                    <div class="editor2">
+                        <div class="line-numbers" id="line-numbers-css"></div>
+                        <textarea id="code-css"  onkeyup="run()" oninput="updateLineNumbers('code-css', 'line-numbers-css')" onscroll="syncScroll('code-css', 'line-numbers-css')"></textarea>
+                    </div>
+                </div>
+                
+                <div class="box3">
+                    <div class="box3head">
+                        <div class="boxlogo">
+                            <i id="jslogo" class='bx bxl-javascript'></i>
+                            <label>JavaScript</label>
+                        </div>
+                        <div class="boxsetting">
+                            <i id="settinglogo" class='bx bxs-cog'></i>
+                            <i id="arrowlogo" class='bx bxs-chevron-down'></i>
+                        </div>
+                    </div>
+                    <div class="editor3">
+                        <div class="line-numbers" id="line-numbers-js"></div>
+                        <textarea id="code-js" onkeyup="run()" oninput="updateLineNumbers('code-js', 'line-numbers-js')" onscroll="syncScroll('code-js', 'line-numbers-js')"></textarea>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+        <div class="right">
+            <iframe id="output"></iframe>
+
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="navbar.js"></script>
+    <script src="script.js"></script>
+    <script src="script1.js"></script>
+    <script src="darkmode.js"></script>
+    <script src="preloader.js"></script>
+
+
+</body>
+
+</html>
