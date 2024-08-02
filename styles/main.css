@@ -1,0 +1,289 @@
+*{
+
+    font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root{
+ 
+    /* --body_background_color: #0a192f; */
+
+    --body_background_color: black;
+    --textarea_background_color: #1D1E22;
+    --text_colour: #8892b0;
+    --navbar_list_color:white;
+    --notification_btn_color:white;
+    ---hi_color:#64ffda;
+    
+
+}
+
+.dark_theam{
+    /* --body_background_color: rgb(255, 255, 255); */
+    --body_background_color: black;
+    --text_colour: black;
+    --navbar_list_color:black;
+    --notification_btn_color:black;
+    ---hi_color:#3498db;
+   
+    --textarea_background_color: rgb(233, 232, 232);
+
+    
+}
+body {
+    height: 100vh;
+    width: 100%;
+}
+.navigation_bar{
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.button_items{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.box1, .box2, .box3{
+    width: 100%;
+    height: 45vh;
+    /* background-color: black; */
+    margin: 0rem 2rem 0rem 0rem;
+
+}
+
+
+
+.editor{
+    height: 54vh;
+    background-color:black ; 
+    padding: 1rem 0rem;
+
+
+}
+.left{
+    display: flex;
+    height: 100%;
+    background-color: var(--body_background_color);
+    /* flex-direction: row; */
+}
+
+
+
+label{
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0rem 1rem 3rem 1rem ;
+    transform: translateY(-10px);
+
+    color: #fff;
+    text-align: start;
+    font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+   
+}
+
+label i {
+    /* padding-right: 5px; */
+     width: 100%;
+     color: white;
+    
+
+ 
+}
+
+
+
+iframe{
+    width: 100%;
+    height: 40vh;
+    background:white;
+    color:black;
+    border: 0;
+    outline: 0;
+    max-width: 100%;
+}
+
+.box1head, .box2head, .box3head{
+    background-color: black;
+}
+
+.box1head{
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+}
+.box2head{
+    display: flex;
+   
+    align-items: center;
+    justify-content: space-between;
+}
+.box3head{
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+}
+.boxlogo{
+    border-radius: 0px 5px 0px 0px;
+    background-color: #1D1E22;
+    padding: 5px;
+}
+
+#htmllogo{
+    font-size: 25px;
+    color: red;
+   
+}
+#csslogo{
+    font-size: 25px;
+    color: blue;
+
+}
+#jslogo{
+    font-size: 25px;
+    color: yellow;
+
+}
+#settinglogo, #arrowlogo{
+    color: white;
+    background-color:#1D1E22 ;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 15px;
+    margin: 0px 3px;
+}
+#settinglogo1{
+    color: white;
+    /* background-color:#656B79; */
+    padding: 2px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.editor1, .editor2, .editor3{
+    display: flex;
+    /* border: 1px solid #ccc; */
+    overflow: hidden;
+    position: relative; /* Ensure relative positioning for line numbers */
+    /* position: relative; */
+    display: flex;
+    height: 45vh;
+    border: solid black 1px;
+}
+
+.line-numbers,.line-numbers1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    padding: 10px;
+    color: white;
+    background-color:#1D1E22 ;
+    
+    text-align: left;
+    user-select: none;
+    overflow-y: hidden; /* Enable scrolling for line numbers */
+    overflow-x: hidden; /* Hide horizontal scrollbar for line numbers */
+    height: 100%; /* Make line numbers take full height of editor */
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    color: var(--text_colour);
+    border: none;
+    outline: none;
+    font-family: inherit;
+    overflow-y: auto;
+    overflow-x: auto;
+    background: var(--textarea_background_color);
+    font-size: 15px;
+    padding: 10px 30px;
+    resize: none;
+    font-family: inherit;
+    white-space: pre; /* Ensure the text area handles long lines properly */
+    display: block; /* Ensure the textarea expands horizontally */
+}
+
+
+
+textarea::-webkit-scrollbar {
+    cursor: pointer;
+    width: 4px; 
+    height: 4px; 
+}
+textarea.hidden-scrollbar::-webkit-scrollbar {
+    display: none; 
+    cursor: pointer;
+}
+textarea::-webkit-scrollbar-track {
+    cursor: pointer;
+    background: #1D1E22; /* Background color of the scrollbar track */
+}
+
+textarea::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    color: #656B79;
+    height: 1x;
+    background:#656B79; /* Background color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+}
+.centered-save{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#sunrise{
+    display: none;
+    padding-top: 2px;
+    width: 100%;
+    height: 20px;
+}
+#sunfall{
+    padding-top: 2px;
+     width: 100%;
+    height: 20px;
+}
+/* #moon{
+    display: none;
+} */
+.navbar {
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--body_background_color); /* Optional: for better visibility */
+}
+
+.navbar-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.navbar-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px; /* Optional: adjust space between items */
+}
+#signup{
+    background-color: aqua;
+    color: black;
+}
+
